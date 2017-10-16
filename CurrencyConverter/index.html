@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Currency converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-3 text-center mb-3">€urrenc¥ converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="number"
+                         id="eurInput"
+                         class="form-control form-control-lg"
+                         placeholder="Enter value in €...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card card-primary mb-2">
+                        <div class="card-block">
+                            <h4>United States dollar - USD($):</h4>
+                            <div id="usdOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4>Japanese yen - JPY (¥):</h4>
+                            <div id="jpyOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4>Pound sterling - GBP (£):</h4>
+                            <div id="gbpOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-warning mb-2">
+                        <div class="card-block">
+                            <h4>Česká koruna - CZK (Kč):</h4>
+                            <div id="czkOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-info mb-2">
+                        <div class="card-block">
+                            <h4>Hungarian forint - HUF (Ft):</h4>
+                            <div id="hufOutput"></div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <p>&copy; Coded and designed by Majko.</p>
+                </footer>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-4 text-center mt-4 mb-4">Mixed €urrenc¥ converter</h1>
+                <span class="text-center ">Do you have multiple currencies and you wonder how much money will you
+                have in only one currency? </span>
+
+                <div class="input-group mt-2 mb-2">
+                    <span class="input-group-addon">$</span>
+                    <input id="sumUsd" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <div class="input-group mb-2">
+                    <span class="input-group-addon">¥</span>
+                    <input id="sumJpy" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <div class="input-group mb-2">
+                    <span class="input-group-addon">£</span>
+                    <input id="sumGbp" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <div class="input-group mb-2">
+                    <span class="input-group-addon">Kč</span>
+                    <input id="sumCzk" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <div class="input-group mb-2">
+                    <span class="input-group-addon">Ft</span>
+                    <input id="sumHuf" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <button id="btn-sum" class="btn btn-info btn-lg btn-block" type="button" onclick="sums()">Sum it up!</button>
+
+              <div id="summation">
+                <div class="card card-success mt-4">
+                    <div class="card-block">
+                        <h4>Summation in € (Eur):</h4>
+                        <div id="sumOut"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
